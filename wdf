@@ -1,0 +1,470 @@
+ 1 styling Web Pages using CSS Box Model and Background Properties
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CSS Box Model and Background</title>
+
+    <style>
+    /* Background styling for the page */
+    body {
+        background-color: lightblue;
+        background-image: url("background.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        font-family: Arial;
+    }
+
+    /* Box Model demonstration */
+    .box {
+        width: 300px;
+        padding: 20px;
+        border: 4px solid black;
+        margin: 40px;
+        background-color: white;
+        background-image: url("pattern.png");
+        background-repeat: no-repeat;
+        background-position: right bottom;
+    }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">
+        <h2>CSS Box Model</h2>
+        <p>
+            This box shows how margin, border, padding, and content work together.
+        </p>
+    </div>
+
+</body>
+</html>
+
+
+2 REGISTRATION FORM
+<!DOCTYPE html> 
+<html> 
+<head> 
+<title>User Registration Form</title> 
+</head> 
+<body> 
+<h2>User Registration Form</h2> 
+<form> 
+<label>Full Name:</label><br> 
+<input type="text" name="fullname" required><br><br>
+<label>Email:</label><br> 
+<input type="email" name="email" required><br><br> 
+1
+<label>Password:</label><br> 
+<input type="password" name="password" required><br><br>
+<label>Gender:</label><br> 
+<input type="radio" name="gender" value="Male"> Male 
+<input type="radio" name="gender" value="Female"> Female 
+<input type="radio" name="gender" value="Other"> Other<br><br>
+<label>Date of Birth:</label><br> 
+<input type="date" name="dob"><br><br>
+<label>Address:</label><br> 
+<textarea rows="4" cols="30"></textarea><br><br> 
+<input type="submit" value="Register"> 
+</form> 
+</body> 
+</html>
+
+
+3 Implementation of CSS Animations and Multi-Column Layout
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>CSS Animation and Multiple Columns</title>
+
+<style>
+
+/* Animation Example */
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: tomato;
+    position: relative;
+    animation-name: moveBox;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes moveBox {
+    from {
+        left: 0px;
+        background-color: tomato;
+    }
+
+    to {
+        left: 300px;
+        background-color: teal;
+    }
+}
+
+/* Multiple Columns */
+.columns {
+    column-count: 3;
+    column-gap: 30px;
+    column-rule: 2px solid gray;
+    font-size: 16px;
+    text-align: justify;
+    padding: 10px;
+}
+
+body{
+    font-family: Arial;
+    margin: 20px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<h1>CSS Animation Example</h1>
+
+<div class="box"></div>
+
+<h1>Multiple Column Layout</h1>
+
+<div class="columns">
+CSS allows content to be displayed in multiple columns similar to
+newspapers. This improves readability and makes better use of space.
+The column layout can be controlled using properties like column-count,
+column-gap, and column-rule. This technique is useful for articles,
+blogs, and documentation pages where large amounts of text are displayed.
+</div>
+
+</body>
+</html>
+
+
+4.JAVA SCRIPT DATA TYPE
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>JavaScript Data Types</title>
+</head>
+
+<body>
+
+<h2>JavaScript Data Types Example</h2>
+
+<script>
+
+let studentName = "Ishu";
+
+let age = 20;
+
+let isStudent = true;
+
+let subjects = ["HTML", "CSS", "JavaScript"];
+
+let student = {
+    name: "JOHN",
+    age: 20,
+    course: "Web Development"
+};
+
+document.write("String: " + studentName + "<br>");
+document.write("Number: " + age + "<br>");
+document.write("Boolean: " + isStudent + "<br>");
+document.write("Array: " + subjects + "<br>");
+document.write(
+    "Object: Name = " + student.name +
+    ", Age = " + student.age +
+    ", Course = " + student.course
+);
+
+</script>
+
+</body>
+</html>
+
+5. SUM OF TWO NUMBERS IN HTML
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<title>Sum of Even Numbers</title>
+
+<style>
+body{
+    font-family: Arial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container{
+    border: 1px solid black;
+    padding: 20px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h2>Sum of Even Numbers in an Array</h2>
+
+<script>
+
+function sumOfEvenNumbers(numbers) {
+
+    let sum = 0;
+
+    for (let i = 0; i < numbers.length; i++) {
+
+        if (numbers[i] % 2 === 0) {
+
+            sum += numbers[i];
+
+        }
+
+    }
+
+    return sum;
+
+}
+
+let numArray = [10, 15, 20, 25, 30, 35];
+
+let result = sumOfEvenNumbers(numArray);
+
+document.write("Array Elements: " + numArray + "<br>");
+
+document.write("Sum of Even Numbers: " + result);
+
+</script>
+
+</div>
+
+</body>
+</html>
+
+6.HTML FORM FOR VALIDATION OF AGE NAME ADDRESS
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8"> 
+<title>User Registration Form</title> 
+</head>
+<body> 
+
+<h2>User Registration Form</h2> 
+<form> 
+<label for="name">Name:</label><br>
+<input type="text" id="name" name="name" 
+placeholder="Enter your name" required> 
+<br><br> 
+<label for="email">Email:</label><br> 
+<input type="email" id="email" name="email" 
+placeholder="Enter your email" required> 
+<br><br> 
+<label for="age">Age:</label><br> 
+<input type="number" id="age" name="age" 
+placeholder="Enter your age" min="1" max="120" required> 
+<br><br> 
+<input type="submit" value="Submit"> 
+</form> 
+</body>
+</html>
+
+7.PHP DATA
+<?php
+
+$age = 25;
+
+$name = "John Doe";
+
+$salary = 45000.75;
+
+$isEmployed = true;
+
+define("COMPANY_NAME", "Tech Solutions Ltd");
+
+echo "Name: $name <br>";
+
+echo "Age: $age <br>";
+
+echo "Salary: $salary <br>";
+
+echo "Employed: " . ($isEmployed ? "Yes" : "No") . "<br>";
+
+echo "Company: " . COMPANY_NAME;
+
+?>
+8.MAX NYMBER IN PHP
+<?php
+
+function findMaxValue($numbers) {
+
+    if (empty($numbers)) {
+        return null;
+    }
+
+    $max = $numbers[0];
+
+    foreach ($numbers as $number) {
+
+        if ($number > $max) {
+            $max = $number;
+        }
+    }
+
+    return $max;
+}
+
+$sampleArray = [12, 45, 7, 99, 34];
+
+echo "The maximum value is: " . findMaxValue($sampleArray);
+
+?>
+ 9.IMAGE UPLODE IN PHP
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>Image Upload</title>
+</head>
+
+<body>
+
+<h2>Upload Image</h2>
+
+<form action="upload.php" method="post" enctype="multipart/form-data">
+
+<input type="file" name="image" required>
+
+<br><br>
+
+<input type="submit" name="upload" value="Upload">
+
+</form>
+
+</body>
+
+</html>
+
+<?php
+
+if (isset($_POST['upload'])) {
+
+    $uploadDir = "uploads/";
+
+    $fileName = $_FILES["image"]["name"];
+
+    $fileTmp = $_FILES["image"]["tmp_name"];
+
+    $fileType = $_FILES["image"]["type"];
+
+    $fileError = $_FILES["image"]["error"];
+
+    $allowedTypes = array("image/jpeg", "image/png");
+
+    if ($fileError === 0) {
+
+        if (in_array($fileType, $allowedTypes)) {
+
+            if (!is_dir($uploadDir)) {
+
+                mkdir($uploadDir, 0777, true);
+
+            }
+
+            $targetFile = $uploadDir . basename($fileName);
+
+            if (move_uploaded_file($fileTmp, $targetFile)) {
+
+                echo "Image uploaded successfully!";
+
+            } else {
+
+                echo "Error uploading file.";
+
+            }
+
+        } else {
+
+            echo "Only JPEG and PNG images are allowed.";
+
+        }
+
+    } else {
+
+        echo "File upload error.";
+
+    }
+
+}
+
+?>
+
+10. set timer for the welcome message
+const EventEmitter = require('events');
+
+const emitter = new EventEmitter();
+
+emitter.on('welcome', () => {
+
+console.log("Welcome to Node.js!");
+
+});
+
+setTimeout(() => {
+
+emitter.emit('welcome');
+
+}, 3000);
+
+11.sum of the number in d=node js
+function calculateSum(a, b, callback) {
+
+callback(a, b);
+
+}
+
+function addNumbers(x, y) {
+
+console.log("Sum of the two numbers:", x + y);
+
+}
+
+calculateSum(10, 20, addNumbers);
+
+
+12. read fike in text file
+
+const fs = require('fs');
+
+fs.readFile('sample.txt', 'utf8', (error, data) => {
+
+if (error) {
+
+console.log("Error reading file:", error);
+
+return;
+
+}
+
+console.log("File Content:\n" + data);
+
+});
